@@ -1,0 +1,63 @@
+@import "mixins";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 88px 24px;
+  border-radius: 10px;
+  overflow: hidden;
+
+  @include desktop {
+    flex-direction: row;
+    margin-left: 260px;
+    margin-right: 260px;
+    flex: 1;
+    max-height: 500px;
+  }
+  &__item {
+    padding: 50px;
+    &__sedan {
+      background-color: $brightOrange;
+    }
+    &__suv {
+      background-color: $darkCyan;
+    }
+    &__luxury {
+      background-color: $veryDarkCyan;
+    }
+  }
+}
+
+.button {
+  width: 9.375rem;
+  height: 3.125rem;
+  border: 2px solid $veryLightGray;
+  border-radius: 25px;
+  &:hover {
+    background-color: inherit;
+    color: $veryLightGray;
+    cursor: pointer;
+  }
+
+  &__sedan {
+    color: $brightOrange;
+  }
+  &__suv {
+    color: $darkCyan;
+  }
+  &__luxury {
+    color: $veryDarkCyan;
+  }
+}
+
+.title {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.paragraph {
+  color: $transparentWhite;
+  @include desktop {
+    margin-top: 41px;
+    margin-bottom: 87px;
+  }
+}

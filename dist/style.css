@@ -1,0 +1,120 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 88px 24px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 260px;
+    margin-right: 260px;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    max-height: 500px;
+  }
+}
+
+.container__item {
+  padding: 50px;
+}
+
+.container__item__sedan {
+  background-color: #e38826;
+}
+
+.container__item__suv {
+  background-color: #006970;
+}
+
+.container__item__luxury {
+  background-color: #004241;
+}
+
+.button {
+  width: 9.375rem;
+  height: 3.125rem;
+  border: 2px solid #f2f2f2;
+  border-radius: 25px;
+}
+
+.button:hover {
+  background-color: inherit;
+  color: #f2f2f2;
+  cursor: pointer;
+}
+
+.button__sedan {
+  color: #e38826;
+}
+
+.button__suv {
+  color: #006970;
+}
+
+.button__luxury {
+  color: #004241;
+}
+
+.title {
+  font-family: "Big Shoulders Display", cursive;
+}
+
+.paragraph {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media only screen and (min-width: 1440px) {
+  .paragraph {
+    margin-top: 41px;
+    margin-bottom: 87px;
+  }
+}
+
+html {
+  font-size: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.9375rem;
+  background-color: #f2f2f2;
+  color: #f2f2f2;
+  line-height: 1.3;
+}
+
+@media only screen and (min-width: 1440px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+  }
+}
+/*# sourceMappingURL=style.css.map */
