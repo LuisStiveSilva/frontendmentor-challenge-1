@@ -47,6 +47,9 @@
   &__luxury {
     color: $veryDarkCyan;
   }
+  @include desktop {
+    margin-bottom: 46px;
+  }
 }
 
 .title {
@@ -58,7 +61,7 @@
   color: $transparentWhite;
   margin-bottom: 30px;
   @include desktop {
-    margin-top: 41px;
-    margin-bottom: 87px;
+    margin-top: 20px;
+    margin-bottom: 75px;
   }
 }
